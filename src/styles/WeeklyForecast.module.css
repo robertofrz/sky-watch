@@ -1,0 +1,29 @@
+.dailyContainer {
+  width: 45%;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.day {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.weeklyTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.dayOfTheWeek {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 500px) {
+  .dailyContainer {
+    width: 100%;
+  }
+}

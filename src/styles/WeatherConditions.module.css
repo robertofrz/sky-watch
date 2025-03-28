@@ -1,0 +1,25 @@
+.conditionsContainer {
+  width: 45%;
+  border-radius: 5%;
+  padding-top: 2rem;
+  backdrop-filter: blur(10px);
+}
+.weatherConditions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  row-gap: 2.3rem;
+  padding-bottom: 2rem;
+}
+.conditionTitle {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.condition {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .conditionsContainer {
+    width: 100%;
+  }
+}

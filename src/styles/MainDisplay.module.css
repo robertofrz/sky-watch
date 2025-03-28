@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+.mainDisplay {
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.currentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  line-height: 1rem;
+  width: max-content;
+}
+.searchInputContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.mainTemp {
+  font-size: 4.5rem;
+}
+
+.currentCondition {
+  font-size: 3rem;
+}
+.currentMinMax {
+  display: flex;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  font-size: 2rem;
+}
+.searchInput {
+  background-color: rgba(119, 119, 119, 0.301);
+
+  width: 25rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  color: white;
+  outline: none;
+  padding: 0 0.4rem;
+  border: 2px solid rgb(179, 179, 179);
+}
+.searchInput::placeholder {
+  color: rgb(194, 194, 194);
+  font-family: "Outfit", sans-serif;
+}
+.searchBtn {
+  width: 5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: none;
+  margin-left: -1rem;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 0.3rem;
+  right: -1rem;
+}
+
+.searchIcon {
+  width: 2.3rem;
+  filter: invert(100%);
+}
+@media (max-width: 500px) {
+  .searchInput {
+    width: 80vw;
+  }
+}

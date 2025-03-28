@@ -1,0 +1,90 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  color: white;
+  padding: 10px 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+.leftContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.menuToggle {
+  border: none;
+  background-color: #f4f4f400;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+.menuIcon {
+  filter: invert(100%);
+  width: 2.5rem;
+  opacity: 70%;
+}
+.menu-toggle {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.switch {
+  --width: 50px;
+  --height: calc(var(--width) / 2);
+  --border-radius: calc(var(--height) / 2);
+
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.toggleFill {
+  position: relative;
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border-radius);
+  background: #dddddd;
+  transition: background 0.2s;
+}
+
+.toggleInput:checked ~ .toggleFill {
+  background: #2571ff;
+}
+
+.toggleFill::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--height);
+  width: var(--height);
+  background: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  border-radius: var(--border-radius);
+  transition: transform 0.2s;
+}
+
+.toggleInput:checked ~ .toggleFill::after {
+  transform: translateX(var(--height));
+}
+
+.temperatureToggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.appName {
+  margin-right: 3rem;
+  font-size: 1.4rem;
+}

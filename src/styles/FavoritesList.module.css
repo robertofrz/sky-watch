@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+.favoritesMenu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+.favCity {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: #232e4d;
+  box-shadow: 2px 2px 5px rgba(46, 46, 46, 0.493);
+  padding-top: 0.3rem;
+  cursor: pointer;
+  border-radius: 5%;
+}
+.favCityWeather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.favList {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.favTemp {
+  font-weight: bold;
+  margin-top: -0.5rem;
+}
+.favCityName {
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+.deleteBtn {
+  border: none;
+  background-color: #64646400;
+}
+.removeBtn {
+  width: 1.6rem;
+  filter: invert(100%);
+  cursor: pointer;
+}
+.addCityContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.searchInput {
+  background-color: rgba(119, 119, 119, 0.301);
+  border-radius: 5%;
+  width: 67%;
+  height: 1.8rem;
+  font-size: 1.2rem;
+  color: white;
+  outline: none;
+  padding: 0 0.4rem;
+  border: 2px solid rgba(179, 179, 179, 0.596);
+}
+.searchInput::placeholder {
+  color: rgba(194, 194, 194, 0.637);
+  font-family: "Outfit", sans-serif;
+}
+.searchBtn {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 5%;
+  cursor: pointer;
+  background-color: #232e4d;
+  color: rgb(241, 241, 241);
+  box-shadow: 2px 2px 5px rgba(70, 70, 70, 0.301);
+  border: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.9rem;
+}
