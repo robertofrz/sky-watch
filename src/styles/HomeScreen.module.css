@@ -61,4 +61,7 @@
   .sideMenu {
     width: 100vw;
   }
+  :global(body) {
+    background-image: url("/thunderstorm-mobile.png");
+  }
 }
