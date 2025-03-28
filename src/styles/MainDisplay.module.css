@@ -16,7 +16,7 @@
   align-items: center;
   height: 35rem;
   line-height: 1rem;
-  width: max-content;
+  width: 85vw;
 }
 .searchInputContainer {
   display: flex;
@@ -25,7 +25,7 @@
 }
 
 .mainTemp {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .currentCondition {
@@ -39,7 +39,7 @@
 h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
 }
 h2 {
@@ -80,5 +80,8 @@ h2 {
 @media (max-width: 500px) {
   .searchInput {
     width: 80vw;
+  }
+  h1 {
+    font-size: 2.5rem;
   }
 }

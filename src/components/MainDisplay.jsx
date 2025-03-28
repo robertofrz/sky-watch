@@ -31,12 +31,12 @@ function MainDisplay() {
           placeholder="Enter city"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyPress}
           className={styles.searchInput}
         />
         <button className={styles.searchBtn} onClick={handleSearch}>
           <img
-            src="/search-icon.png"
+            src="./search-icon.png"
             className={styles.searchIcon}
             alt="search icon"
           />

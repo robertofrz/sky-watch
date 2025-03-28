@@ -9,7 +9,6 @@ function Header() {
     (state) => state.toggleTemperatureUnit
   );
 
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -24,7 +23,7 @@ function Header() {
         <button className={styles.menuToggle} onClick={toggleMenu}>
           <img
             className={styles.menuIcon}
-            src="/menu-icon.png"
+            src="./menu-icon.png"
             alt="menu icon"
           />
         </button>

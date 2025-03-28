@@ -11,7 +11,6 @@ const FavoritesList = () => {
   const setIsMenuOpen = useWeatherStore((state) => state.setIsMenuOpen);
   const inputRef = useRef(null);
 
-  
   useEffect(() => {
     const storedFavorites = JSON.parse(localStorage.getItem("favorites")) || [];
     setFavorites(storedFavorites);
@@ -74,7 +73,7 @@ const FavoritesList = () => {
               >
                 <img
                   className={styles.removeBtn}
-                  src="/remove-icon.png"
+                  src="./remove-icon.png"
                   alt="remove icon"
                 />
               </button>
