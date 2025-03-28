@@ -8,7 +8,7 @@ export default async function fetchWeather(location) {
         : `${location.latitude}, ${location.longitude}`;
 
     const response = await axios.get(
-      `http://api.weatherapi.com/v1/forecast.json?key=54c3c60d4f234ae8b64180553252303&q=${query}&days=7&aqi=no&alerts=no`
+      `https://api.weatherapi.com/v1/forecast.json?key=54c3c60d4f234ae8b64180553252303&q=${query}&days=7&aqi=no&alerts=no`
     );
 
     console.log(response.data);
