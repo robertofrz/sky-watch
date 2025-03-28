@@ -31,7 +31,7 @@
   margin: 2rem auto 2rem auto;
 }
 :global(body) {
-  background-image: url("./thunderstorm.png");
+  background-image: url("/thunderstorm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
     width: 100vw;
   }
   :global(body) {
-    background-image: url("./thunderstorm-mobile.png");
+    background-image: url("/thunderstorm-mobile.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
