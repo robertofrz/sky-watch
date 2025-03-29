@@ -6,7 +6,7 @@
   align-items: center;
   width: 100%;
   overflow-x: hidden;
-  margin-left: -0.8rem;
+  margin-left: -0.4rem;
 }
 
 .sideMenu {
@@ -14,7 +14,7 @@
   backdrop-filter: blur(50px);
   padding: 20px;
   position: fixed;
-  top: 3rem;
+  top: 2.5rem;
   left: 0;
   bottom: 0;
   transition: transform 0.3s ease;
@@ -52,20 +52,16 @@
   flex-direction: column;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .secondaryInfo {
     display: flex;
     flex-direction: column;
     gap: 2rem;
   }
   .sideMenu {
-    width: 100vw;
+    width: 75vw;
   }
   :global(body) {
-    background-image: url("/thunderstorm-mobile.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-image: url("/thunderstorm-mobile4.webp");
   }
 }

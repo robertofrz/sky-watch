@@ -1,6 +1,6 @@
 .hourContainer {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 1.5rem;
   width: 70vw;
   overflow-x: auto;

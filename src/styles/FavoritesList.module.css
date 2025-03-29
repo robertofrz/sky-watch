@@ -2,9 +2,10 @@
 .favoritesMenu {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   align-items: center;
   gap: 2rem;
+  margin: auto;
 }
 .favCity {
   display: flex;
@@ -16,6 +17,7 @@
   padding-top: 0.3rem;
   cursor: pointer;
   border-radius: 5%;
+  height: 5rem;
 }
 .favCityWeather {
   display: flex;
@@ -49,6 +51,8 @@
 }
 .addCityContainer {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -69,7 +73,7 @@
 }
 .searchBtn {
   height: 2rem;
-  width: 5rem;
+  width: 6rem;
   border-radius: 5%;
   cursor: pointer;
   background-color: #232e4d;
@@ -77,5 +81,5 @@
   box-shadow: 2px 2px 5px rgba(70, 70, 70, 0.301);
   border: none;
   font-family: "Outfit", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }

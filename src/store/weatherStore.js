@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const useWeatherStore = create((set) => ({
-  location: "london",
+  location: "new york",
   setLocation: (newLocation) => set({ location: newLocation }),
 
   currentWeather: null,

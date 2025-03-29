@@ -13,7 +13,7 @@ export default function getGeolocation() {
     };
 
     const error = (err) => {
-      reject("Erro ao obter localização: " + err.message);
+      reject("Error getting location: " + err.message);
     };
 
     navigator.geolocation.getCurrentPosition(success, error, options);
