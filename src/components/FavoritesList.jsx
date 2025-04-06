@@ -34,7 +34,8 @@ const FavoritesList = () => {
     inputRef.current.value = "";
   }
 
-  function removeCity(city) {
+  function removeCity(e, city) {
+    e.stopPropagation();
     const newFavorites = favorites.filter((fav) => fav !== city.toLowerCase());
     setFavorites(newFavorites);
 
@@ -68,7 +69,7 @@ const FavoritesList = () => {
                 </p>
               </div>
               <button
-                onClick={() => removeCity(city.location.name)}
+                onClick={(e) => removeCity(e, city.location.name)}
                 className={styles.deleteBtn}
               >
                 <img
