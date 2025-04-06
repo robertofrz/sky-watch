@@ -6,7 +6,7 @@
 }
 .weatherConditions {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
   row-gap: 2.3rem;
   padding-bottom: 2rem;

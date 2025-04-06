@@ -10,6 +10,7 @@ function DailyForecast() {
   }
 
   const daysArray = currentWeather.forecast.forecastday;
+  console.log(daysArray);
 
   function getDayOfWeek(dateString) {
     const date = new Date(dateString);
@@ -20,7 +21,7 @@ function DailyForecast() {
 
   return (
     <div className={styles.dailyContainer}>
-      <h1 className={styles.weeklyTitle}>Weekly Forecast</h1>
+      <h1 className={styles.weeklyTitle}>Next Days Forecast</h1>
       {daysArray.map((day, index) => (
         <div className={styles.day} key={day.date_epoch}>
           <p className={styles.dayOfTheWeek}>
