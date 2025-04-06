@@ -47,6 +47,7 @@
   overflow-x: hidden;
 }
 .mainContent {
+  width: 70vw;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;

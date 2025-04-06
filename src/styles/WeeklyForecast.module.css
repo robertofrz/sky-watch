@@ -7,6 +7,7 @@
   border-radius: 5%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-right: -2rem;
 }
 .day {
   display: flex;
