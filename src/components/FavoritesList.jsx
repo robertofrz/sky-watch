@@ -83,7 +83,7 @@ const FavoritesList = () => {
       <div className={styles.addCityContainer}>
         <input
           type="text"
-          placeholder="Enter city"
+          placeholder="Enter favorite city"
           ref={inputRef}
           className={styles.searchInput}
         />
